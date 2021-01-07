@@ -1,7 +1,7 @@
 import * as React from 'react'
 import '../box-styles.css'
 
-const Box = ({className, style, ...otherProps}) => (
+const Box = ({className = '', style, ...otherProps}) => (
   <div
     className={`box ${className}`}
     style={{fontStyle: 'italic', ...style}}
